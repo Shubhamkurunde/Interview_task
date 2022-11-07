@@ -15,7 +15,7 @@
     <button (click)="getLocal()">Show Date</button>
 </div>
 <br><br>
-{{start_date}}
+{{start_date | date: 'dd-MM-yyyy'}}
 <br><br>
-{{End_date}}
+{{End_date | date: 'dd-MM-yyyy'}}
 
