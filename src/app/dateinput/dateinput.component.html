@@ -1,0 +1,21 @@
+<div>
+    <label for="start">
+        Start:
+    </label>
+    <input type="date" name="start" id="start" [(ngModel)]="selectedDate" (change)="nextDate();" min={{startDate}}>
+    <br><br>
+    <label for="start">
+        End:
+    </label>
+    <input type="date" name="end" [(ngModel)]="endDate" id="end" min={{maxDate}}>
+<br><br>
+    <button (click)="saveLocal()">Save</button>
+</div>
+<div>
+    <button (click)="getLocal()">Show Date</button>
+</div>
+<br><br>
+{{start_date}}
+<br><br>
+{{End_date}}
+
